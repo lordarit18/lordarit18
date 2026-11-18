@@ -1,7 +1,7 @@
-num1,num2=0,1
-for i in range(10):
-    print(num1)
-    next=num1+num2
-    num1=num2
-    num2=next
-    print(next)
+def factorial(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+
+    
