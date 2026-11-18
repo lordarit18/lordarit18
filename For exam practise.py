@@ -4,4 +4,8 @@ def factorial(n):
     else:
         return n*factorial(n-1)
 
-    
+num=int(input('Enter a number:'))
+if num<0:
+    print('Not definesd')
+else:
+    print('factorial=', factorial(num))  
