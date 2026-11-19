@@ -1,22 +1,30 @@
-salary=float(input('Enter your salary:'))
-experience=int(input('Enter years of experience:'))
-rating=float(input('Enter performane rating(1-5):'))
+'''Accept an integer and determine whether it is:'''
 
-if experience<2:
-    bonus=0
-else:
-    if experience<=5:
-        if rating>=4:
-            bonus=salary*0.10
+n=int(input('Enter a number:'))
+if n>0:
+    print('Positive Number:')
+
+    if n%2==0:
+        print('Even Number')
+
+        if n%4==0:
+            print('Ddivisible by 4')
         else:
-            bonus=salary*0.05
+            print('Not divisible by 4')
     else:
-        if rating>=4:
-            bonus=salary*0.15
-        elif rating>=3:
-            bonus=salary*0.10
-        else:
-            bonus=salary*0.05
+        print('Odd Number')
 
-print('Bonus=', bonus)
-print('Total salary=', salary+bonus)
+    if n%3==0:
+        print('Divisible by 3')
+    else:
+        print('Not divisible by 3')
+elif n<0:
+    print('Negative number')
+
+    if n%2==0:
+        print('Even negative Number:')
+    else:
+        print('Odd negative Number')
+
+else:
+    print('Zero')
