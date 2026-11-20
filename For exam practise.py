@@ -1,10 +1,9 @@
 #Find the length of a given string without using the len() function.
-n=int(input('Enter the number:'))
-binary=[]
-while n>0:
-    binary.append(n%2)
-    n=n//2
+s='Iam 25 years and 10 months old'
 
-for i in binary[::-1]:
-    print(i, end=' ')
-    
+res=' '
+for i in s:
+    if i.isdigit():
+        res=res+i
+
+print(res)
