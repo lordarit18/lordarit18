@@ -1,14 +1,12 @@
-# Write code here
-sum=0
-count=0
-
-while True:
-    num=int(input('Enter number:'))
-    if num==0:
-        break
-    sum=sum+num
-    count=count+1
-
-print('sum', sum)
-print('avg', sum/count)
-
+#Find the length of a given string without using the len() function.
+s=input('Enter the email:')
+L=[]
+temp=' '
+for i in s:
+    if i!=' ':
+        temp=temp+i
+    else:
+        L.append(temp)
+        temp=' '
+L.append(temp)
+print(L)
