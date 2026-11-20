@@ -1,30 +1,14 @@
-'''Accept an integer and determine whether it is:'''
+# Write code here
+sum=0
+count=0
 
-n=int(input('Enter a number:'))
-if n>0:
-    print('Positive Number:')
+while True:
+    num=int(input('Enter number:'))
+    if num==0:
+        break
+    sum=sum+num
+    count=count+1
 
-    if n%2==0:
-        print('Even Number')
+print('sum', sum)
+print('avg', sum/count)
 
-        if n%4==0:
-            print('Ddivisible by 4')
-        else:
-            print('Not divisible by 4')
-    else:
-        print('Odd Number')
-
-    if n%3==0:
-        print('Divisible by 3')
-    else:
-        print('Not divisible by 3')
-elif n<0:
-    print('Negative number')
-
-    if n%2==0:
-        print('Even negative Number:')
-    else:
-        print('Odd negative Number')
-
-else:
-    print('Zero')
