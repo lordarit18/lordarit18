@@ -1,12 +1,10 @@
 #Find the length of a given string without using the len() function.
-s=input('Enter the email:')
-L=[]
-temp=' '
-for i in s:
-    if i!=' ':
-        temp=temp+i
-    else:
-        L.append(temp)
-        temp=' '
-L.append(temp)
-print(L)
+n=int(input('Enter the number:'))
+binary=[]
+while n>0:
+    binary.append(n%2)
+    n=n//2
+
+for i in binary[::-1]:
+    print(i, end=' ')
+    
