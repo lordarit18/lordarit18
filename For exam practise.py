@@ -1,8 +1,5 @@
 #Code here
-d='aaabbbbbcccdddeeeffff'
-res=' '
+basket=['apple', 'guava', 'cherry', 'banana']
+my_fruits=['apple', 'kiwi', 'grapes', 'banana']
 
-for i in d:
-    if i not in res:
-        res=res+i
-print(res)
+print([fruit for fruit in my_fruits if fruit in basket if fruit.startswith('a')])
